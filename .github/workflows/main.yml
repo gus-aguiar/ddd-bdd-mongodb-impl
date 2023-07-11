@@ -23,6 +23,12 @@ jobs:
 
       - name: Testes
         run: npm test
+      
+      - name: Debug Secret
+        run: echo $RAILWAY_TOKEN
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+
       - name: Install Railway
         run: npm i -g @railway/cli
 

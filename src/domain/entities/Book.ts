@@ -11,5 +11,3 @@ class Book {
 }
 
 export default Book;
-
-// test commit 
